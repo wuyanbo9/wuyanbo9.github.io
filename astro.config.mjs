@@ -10,6 +10,12 @@ export default defineConfig({
     locales: ['en', 'zh'],
     routing: { prefixDefaultLocale: false },
   },
+  markdown: {
+    // Dual theme: global.css swaps to the dark values under prefers-color-scheme.
+    shikiConfig: {
+      themes: { light: 'github-light', dark: 'github-dark' },
+    },
+  },
   integrations: [
     sitemap({
       i18n: {
