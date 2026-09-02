@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostList from '../components/PostList.astro';
-import { SITE_NAME } from '../consts';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
@@ -10,8 +9,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
 ---
 
 <BaseLayout>
-  <h1>{SITE_NAME}</h1>
-  <p class="tagline">Building things on the internet.</p>
+  <h1 class="lede">Building things on the internet.</h1>
 
   <p>
     This is a placeholder introduction. A sentence or two about who I am, what I work on, and

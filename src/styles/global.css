@@ -113,6 +113,13 @@ a {
   margin-bottom: 2rem;
 }
 
+/* Homepage opener: the page heading, set at reading size rather than as a banner. */
+.lede {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+}
+
 .muted {
   color: var(--muted);
 }
