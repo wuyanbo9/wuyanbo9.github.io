@@ -1,0 +1,45 @@
+---
+import {
+  useTranslations,
+  localizePath,
+  stripLang,
+  otherLang,
+  site,
+  type Lang,
+} from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const here = stripLang(Astro.url.pathname);
+const other = otherLang(lang);
+
+const links = [
+  { href: localizePath('/', lang), label: t('nav.home'), match: '/' },
+  { href: localizePath('/blog/', lang), label: t('nav.blog'), match: '/blog' },
+  { href: localizePath('/about/', lang), label: t('nav.about'), match: '/about' },
+];
+
+const isCurrent = (match: string) =>
+  match === '/' ? here === '/' : here.startsWith(match);
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <nav>
+      <span class="brand"><a href={localizePath('/', lang)}>{site.name}</a></span>
+      {
+        links.slice(1).map((link) => (
+          <a href={link.href} aria-current={isCurrent(link.match) ? 'page' : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+      <a href={localizePath(here, other)} hreflang={other === 'zh' ? 'zh-CN' : 'en'}>{t('nav.switch')}</a>
+    </nav>
+  </div>
+</header>
