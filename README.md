@@ -1,7 +1,7 @@
 # wuyb.com
 
-Personal site of Yanbo Wu. Astro, static output, bilingual (English at `/`, 中文 at `/zh/`),
-deployed to GitHub Pages on every push to `main`.
+Personal site of Yanbo Wu. Astro, static output, deployed to GitHub Pages on every
+push to `main`.
 
 ## Commands
 
@@ -14,12 +14,10 @@ npm run check    # type-check .astro/.ts files
 
 ## Writing a post
 
-Create a Markdown file under the folder for its language — the folder decides the URL,
-the `lang` field decides which RSS feed it lands in:
+Create a Markdown file in `src/content/blog/`. The filename becomes the URL:
 
 ```
-src/content/blog/en/my-post.md   ->  https://wuyb.com/blog/my-post/
-src/content/blog/zh/my-post.md   ->  https://wuyb.com/zh/blog/my-post/
+src/content/blog/my-post.md  ->  https://wuyb.com/blog/my-post/
 ```
 
 Frontmatter:
@@ -30,35 +28,27 @@ title: 'Post title'
 description: 'One sentence, used in the list page, meta description, and RSS.'
 pubDate: 2026-09-01
 updatedDate: 2026-09-10   # optional
-lang: 'en'                # 'en' | 'zh', must match the folder
 draft: false              # optional; drafts are excluded from the build
 ---
 ```
-
-The two languages are independent — a post does not need a translation to exist.
-
-## Editing site copy
-
-All UI strings and the placeholder homepage/about copy live in `src/i18n/ui.ts`,
-keyed by language. Pages read from there, so edit the strings, not the templates.
 
 ## Layout
 
 ```
 src/
-  i18n/ui.ts            copy + locale helpers
-  i18n/feed.ts          shared RSS builder
+  consts.ts             site name, blog title, date formatting
   content.config.ts     blog collection schema
-  content/blog/{en,zh}/ posts
+  content/blog/         posts
   layouts/              BaseLayout (head/SEO), PostLayout
   components/           Header, Footer, PostList
-  components/pages/     shared page bodies, rendered once per language
-  pages/                routes: /* is English, /zh/* is Chinese
+  pages/                routes
   styles/global.css     the whole stylesheet
 public/
   CNAME                 custom domain for GitHub Pages — do not delete
   robots.txt
 ```
+
+Homepage copy lives directly in `src/pages/index.astro`.
 
 ## Deployment
 

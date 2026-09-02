@@ -1,40 +1,24 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {
-  useTranslations,
-  localizePath,
-  stripLang,
-  otherLang,
-  site,
-  type Lang,
-} from '../i18n/ui';
+import { SITE_NAME, SITE_DESCRIPTION, BLOG_TITLE } from '../consts';
 import '../styles/global.css';
 
 interface Props {
-  lang: Lang;
   title?: string;
   description?: string;
-  /** Set for article pages so Open Graph reports the right type. */
+  /** Set on article pages so Open Graph reports the right type. */
   type?: 'website' | 'article';
 }
 
-const { lang, title, description, type = 'website' } = Astro.props;
-const t = useTranslations(lang);
+const { title, description, type = 'website' } = Astro.props;
 
-const pageTitle = title ? `${title} · ${site.name}` : site.name;
-const pageDescription = description ?? t('site.description');
-
-const here = stripLang(Astro.url.pathname);
-const other = otherLang(lang);
+const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+const pageDescription = description ?? SITE_DESCRIPTION;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const altSelf = new URL(localizePath(here, lang), Astro.site);
-const altOther = new URL(localizePath(here, other), Astro.site);
-const htmlLang = lang === 'zh' ? 'zh-CN' : 'en';
-const feed = lang === 'en' ? '/rss.xml' : localizePath('/rss.xml', lang);
 ---
 
-<html lang={htmlLang}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,34 +27,31 @@ const feed = lang === 'en' ? '/rss.xml' : localizePath('/rss.xml', lang);
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={`${site.name} — ${t('nav.blog')}`}
-      href={new URL(feed, Astro.site)}
+      title={`${SITE_NAME} — ${BLOG_TITLE}`}
+      href={new URL('/rss.xml', Astro.site)}
     />
 
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang={htmlLang} href={altSelf} />
-    <link rel="alternate" hreflang={other === 'zh' ? 'zh-CN' : 'en'} href={altOther} />
-    <link rel="alternate" hreflang="x-default" href={new URL(localizePath(here, 'en'), Astro.site)} />
 
     <meta property="og:type" content={type} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content={site.name} />
-    <meta property="og:locale" content={lang === 'zh' ? 'zh_CN' : 'en_US'} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary" />
 
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-    <Header lang={lang} />
+    <Header />
     <main>
       <div class="wrap">
         <slot />
       </div>
     </main>
-    <Footer lang={lang} />
+    <Footer />
   </body>
 </html>

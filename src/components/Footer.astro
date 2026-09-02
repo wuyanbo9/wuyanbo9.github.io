@@ -1,17 +1,10 @@
 ---
-import { useTranslations, localizePath, type Lang } from '../i18n/ui';
+import { SITE_NAME } from '../consts';
 
-interface Props {
-  lang: Lang;
-}
-
-const { lang } = Astro.props;
-const t = useTranslations(lang);
 const year = new Date().getFullYear();
-const feed = lang === 'en' ? '/rss.xml' : localizePath('/rss.xml', lang);
 ---
 
 <footer class="site-footer wrap">
-  <span>{t('footer.rights').replace('{year}', String(year))}</span>
-  <a href={feed}>{t('footer.rss')}</a>
+  <span>© {year} {SITE_NAME}</span>
+  <a href="/rss.xml">RSS</a>
 </footer>

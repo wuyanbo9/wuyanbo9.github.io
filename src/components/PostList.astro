@@ -1,24 +1,21 @@
 ---
-import { formatDate, localizePath, slugFromId, type Lang } from '../i18n/ui';
 import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../consts';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
-  lang: Lang;
   showDescription?: boolean;
 }
 
-const { posts, lang, showDescription = true } = Astro.props;
+const { posts, showDescription = true } = Astro.props;
 ---
 
 <ul class="posts">
   {
     posts.map((post) => (
       <li>
-        <a href={localizePath(`/blog/${slugFromId(post.id)}/`, lang)}>{post.data.title}</a>
-        <time datetime={post.data.pubDate.toISOString()}>
-          {formatDate(post.data.pubDate, lang)}
-        </time>
+        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+        <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
         {showDescription && <p class="excerpt">{post.data.description}</p>}
       </li>
     ))

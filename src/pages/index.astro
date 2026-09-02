@@ -1,5 +1,35 @@
 ---
-import Home from '../components/pages/Home.astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { SITE_NAME } from '../consts';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
-<Home lang="en" />
+<BaseLayout>
+  <h1>{SITE_NAME}</h1>
+  <p class="tagline">Building things on the internet.</p>
+
+  <p>
+    This is a placeholder introduction. A sentence or two about who I am, what I work on, and
+    what I care about — enough for a stranger to know whether the rest of this site is for them.
+  </p>
+
+  <h2>Now</h2>
+  <p>
+    Placeholder: what I am spending my time on these days. Updated whenever it stops being true.
+  </p>
+
+  {
+    posts.length > 0 && (
+      <>
+        <h2>Recent writing</h2>
+        <PostList posts={posts} showDescription={false} />
+        <p><a href="/blog/">All posts →</a></p>
+      </>
+    )
+  }
+</BaseLayout>

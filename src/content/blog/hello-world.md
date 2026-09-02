@@ -18,4 +18,4 @@ console.log('hello, world');
 
 > Blockquotes look like this.
 
-New posts go in `src/content/blog/en/`. The filename becomes the URL.
+New posts go in `src/content/blog/`. The filename becomes the URL.
