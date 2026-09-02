@@ -3,6 +3,7 @@ title: 'Hello, world'
 description: 'A placeholder first post, mostly here to prove the pipeline works.'
 pubDate: 2026-09-01
 lang: 'en'
+draft: true
 ---
 
 This is a placeholder post. Delete it once there is something real to say.
