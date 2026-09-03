@@ -213,8 +213,8 @@ hr {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.5rem 0 3rem;
+/*  border-top: 1px solid var(--border); */
+/*  padding: 0rem 0 3rem; */
   font-size: 0.85rem;
   color: var(--muted);
   display: flex;
