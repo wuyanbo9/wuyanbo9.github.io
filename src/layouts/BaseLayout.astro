@@ -1,4 +1,5 @@
 ---
+import { Font } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_NAME, SITE_DESCRIPTION, BLOG_TITLE } from '../consts';
@@ -24,6 +25,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <Font cssVariable="--font-body" preload />
     <link
       rel="alternate"
       type="application/rss+xml"

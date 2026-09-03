@@ -32,10 +32,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
-    'Hiragino Sans GB', 'Microsoft YaHei', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-family: var(--font-body);
+  font-size: 19px;
+  line-height: 1.65;
   text-rendering: optimizeLegibility;
 }
 
@@ -113,13 +112,6 @@ a {
   margin-bottom: 2rem;
 }
 
-/* Homepage opener: the page heading, set at reading size rather than as a banner. */
-.lede {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0 0 1.5rem;
-}
-
 .muted {
   color: var(--muted);
 }
@@ -175,6 +167,11 @@ hr {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+.prose pre,
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 }
 
 .prose pre {
