@@ -8,7 +8,7 @@
   --measure: 38rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --bg: #161614;
     --fg: #e9e8e2;
