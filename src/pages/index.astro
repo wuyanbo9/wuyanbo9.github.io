@@ -10,15 +10,20 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
 
 <BaseLayout>
   <p>
-    It's hard to describe me. I am complicated.
+    I am a problem solver / product builder.
+  </p>
+  <p>
+    Leading a team at TikTok. 
+  </p>
+  <p>
+    Learning AI.
   </p>
 
   {
     posts.length > 0 && (
       <>
-        <h2>Recent writing</h2>
+        <h2>Writing</h2>
         <PostList posts={posts} showDescription={false} />
-        <p><a href="/blog/">All posts →</a></p>
       </>
     )
   }

@@ -15,7 +15,6 @@ const { posts, showDescription = true } = Astro.props;
     posts.map((post) => (
       <li>
         <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-        <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate)}</time>
         {showDescription && <p class="excerpt">{post.data.description}</p>}
       </li>
     ))

@@ -1,22 +1,13 @@
 ---
-title: 'Hello, world'
-description: 'A placeholder first post, mostly here to prove the pipeline works.'
+title: 'How to learn AI'
+description: ''
 pubDate: 2026-09-01
 lang: 'en'
 draft: true
 ---
 
-This is a placeholder post. Delete it once there is something real to say.
+> AI is changing the world. How to learn remains unchanged. 
 
-## What this page proves
+## Set a goal and find ways to measure it
 
-The Markdown pipeline works: headings, **bold text**, `inline code`, and links
-all render through the shared article styles.
-
-```js
-console.log('hello, world');
-```
-
-> Blockquotes look like this.
-
-New posts go in `src/content/blog/`. The filename becomes the URL.
+## Set a goal and find ways to measure it
