@@ -10,9 +10,9 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: 'Newsreader',
+      name: 'Roboto',
       cssVariable: '--font-body',
-      weights: ['400 700'],
+      weights: ['300'],
       styles: ['normal', 'italic'],
       subsets: ['latin'],
       fallbacks: ['Georgia', 'Times New Roman', 'serif'],

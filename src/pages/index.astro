@@ -10,15 +10,8 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
 
 <BaseLayout>
   <p>
-    I am a problem solver / product builder.
+    Silicon-valley-based problem solver, product builder and learner.
   </p>
-  <p>
-    Leading a team at TikTok. 
-  </p>
-  <p>
-    Learning AI.
-  </p>
-
   {
     posts.length > 0 && (
       <>
