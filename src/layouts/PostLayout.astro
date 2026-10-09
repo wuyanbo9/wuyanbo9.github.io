@@ -1,22 +1,26 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
-import { formatDate } from '../consts';
+import type { Post, PostGroup } from '../posts';
+import { UI, formatDate } from '../i18n';
 
 interface Props {
-  post: CollectionEntry<'blog'>;
+  post: Post;
+  /** Every language version of this post, including `post`. */
+  group: PostGroup;
 }
 
-const { post } = Astro.props;
-const { title, description, pubDate, updatedDate } = post.data;
+const { post, group } = Astro.props;
+const { lang } = post;
+const { title, description, pubDate, updatedDate } = post.entry.data;
+const alternates = Object.fromEntries(Object.entries(group).map(([l, p]) => [l, p.url]));
 ---
 
-<BaseLayout title={title} description={description} type="article">
+<BaseLayout title={title} description={description} type="article" lang={lang} alternates={alternates} langSwitch>
   <article class="prose">
     <h1>{title}</h1>
     <p class="post-meta">
-      <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
-      {updatedDate && <span> · Updated {formatDate(updatedDate)}</span>}
+      <time datetime={pubDate.toISOString()}>{formatDate(pubDate, lang)}</time>
+      {updatedDate && <span> · {UI[lang].updated} {formatDate(updatedDate, lang)}</span>}
     </p>
     <slot />
   </article>

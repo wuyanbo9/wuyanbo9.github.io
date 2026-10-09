@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getPostList } from '../posts';
+import { everyLang, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const posts = (await getPostList(lang)).slice(0, 3);
+---
+
+<BaseLayout lang={lang} alternates={everyLang('/')}>
+  {
+    posts.length > 0 && (
+      <>
+        <PostList posts={posts} lang={lang} showDescription={false} />
+      </>
+    )
+  }
+</BaseLayout>

@@ -1,23 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PostList from '../components/PostList.astro';
-
-const posts = (await getCollection('blog', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+import Home from '../views/Home.astro';
 ---
 
-<BaseLayout>
-  <p>
-    Silicon-valley-based problem solver, product builder and learner.
-  </p>
-  {
-    posts.length > 0 && (
-      <>
-        <h2>Writing</h2>
-        <PostList posts={posts} showDescription={false} />
-      </>
-    )
-  }
-</BaseLayout>
+<Home lang="en" />

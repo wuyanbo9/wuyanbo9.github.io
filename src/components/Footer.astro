@@ -1,12 +1,18 @@
 ---
-import { SITE_NAME, SITE_COPYRIGHT } from '../consts';
+import { SITE_COPYRIGHT } from '../consts';
+import { localize, type Lang } from '../i18n';
 
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer wrap">
   <span>© {year} {SITE_COPYRIGHT}</span>
   <!--
-  <a href="/rss.xml">RSS</a>
+  <a href={localize('/rss.xml', lang)}>RSS</a>
    -->
 </footer>

@@ -1,0 +1,14 @@
+---
+import { render } from 'astro:content';
+import PostLayout from '../../layouts/PostLayout.astro';
+import { getPostPaths } from '../../posts';
+
+export const getStaticPaths = () => getPostPaths('en');
+
+const { post, group } = Astro.props;
+const { Content } = await render(post.entry);
+---
+
+<PostLayout post={post} group={group}>
+  <Content />
+</PostLayout>

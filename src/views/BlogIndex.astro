@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getPostList } from '../posts';
+import { UI, everyLang, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const { blogTitle, blogDescription, empty } = UI[lang];
+const posts = await getPostList(lang);
+---
+
+<BaseLayout title={blogTitle} description={blogDescription} lang={lang} alternates={everyLang('/blog/')}>
+  <h1>{blogTitle}</h1>
+  <p class="tagline">{blogDescription}</p>
+
+  {posts.length === 0 ? <p class="muted">{empty}</p> : <PostList posts={posts} lang={lang} />}
+</BaseLayout>

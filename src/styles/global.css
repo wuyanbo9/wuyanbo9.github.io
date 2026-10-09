@@ -159,6 +159,10 @@ hr {
 }
 
 /* Article body */
+.prose {
+  font-size: 0.9rem;
+}
+
 .prose :is(h2, h3) {
   margin-top: 2rem;
 }

@@ -15,7 +15,8 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.2.10"
+    "astro": "^7.2.10",
+    "lxgw-wenkai-screen-webfont": "^1.7.0"
   },
   "allowScripts": {
     "esbuild": true

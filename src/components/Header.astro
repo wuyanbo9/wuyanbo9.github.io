@@ -1,18 +1,35 @@
 ---
-import { SITE_NAME, BLOG_TITLE } from '../consts';
+import { SITE_NAME } from '../consts';
+import { LANG_NAME, LOCALE, UI, localize, otherLang, type Lang } from '../i18n';
 
+interface Props {
+  lang: Lang;
+  alternates: Partial<Record<Lang, string>>;
+}
+
+const { lang, alternates } = Astro.props;
 const here = Astro.url.pathname;
+// Only offer the switch when this page actually exists in the other language.
+const switchTo = otherLang(lang);
+const switchHref = alternates[switchTo];
 ---
 
 <header class="site-header">
   <div class="wrap">
     <nav>
-      <span class="brand"><a href="/">{SITE_NAME}</a></span>
+      <span class="brand"><a href={localize('/', lang)}>{SITE_NAME}</a></span>
       <!--
-      <a href="/blog/" aria-current={here.startsWith('/blog') ? 'page' : undefined}>
-        {BLOG_TITLE}
+      <a href={localize('/blog/', lang)} aria-current={here.startsWith(localize('/blog', lang)) ? 'page' : undefined}>
+        {UI[lang].blogTitle}
       </a>
        -->
+      {
+        switchHref && (
+          <a class="lang-switch" href={switchHref} hreflang={LOCALE[switchTo]} lang={LOCALE[switchTo]}>
+            {LANG_NAME[switchTo]}
+          </a>
+        )
+      }
     </nav>
   </div>
 </header>

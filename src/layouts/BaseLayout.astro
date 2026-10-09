@@ -2,7 +2,10 @@
 import { Font } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_NAME, SITE_DESCRIPTION, BLOG_TITLE } from '../consts';
+import { SITE_NAME } from '../consts';
+import { DEFAULT_LANG, LOCALE, OG_LOCALE, UI, localize, type Lang } from '../i18n';
+// Simplified-Chinese WenKai, split into unicode-range slices so pages only fetch the glyphs they use.
+import 'lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css';
 import '../styles/global.css';
 
 interface Props {
@@ -10,28 +13,53 @@ interface Props {
   description?: string;
   /** Set on article pages so Open Graph reports the right type. */
   type?: 'website' | 'article';
+  lang?: Lang;
+  /** This page in each language it exists in, including this one. Drives hreflang and the switcher. */
+  alternates?: Partial<Record<Lang, string>>;
+  /** Show the header language switch. Only post pages do, and only when a translation exists. */
+  langSwitch?: boolean;
 }
 
-const { title, description, type = 'website' } = Astro.props;
+const {
+  title,
+  description,
+  type = 'website',
+  lang = DEFAULT_LANG,
+  alternates = {},
+  langSwitch = false,
+} = Astro.props;
 
 const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
-const pageDescription = description ?? SITE_DESCRIPTION;
+const pageDescription = description ?? UI[lang].siteDescription;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const alternateLinks = Object.entries(alternates) as [Lang, string][];
 ---
 
-<html lang="en">
+<html lang={LOCALE[lang]}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <Font cssVariable="--font-body" preload />
+
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={`${SITE_NAME} — ${BLOG_TITLE}`}
-      href={new URL('/rss.xml', Astro.site)}
+      title={`${SITE_NAME} — ${UI[lang].blogTitle}`}
+      href={new URL(localize('/rss.xml', lang), Astro.site)}
     />
+    {
+      alternateLinks.length > 1 &&
+        alternateLinks.map(([l, href]) => (
+          <link rel="alternate" hreflang={LOCALE[l]} href={new URL(href, Astro.site)} />
+        ))
+    }
+    {
+      alternateLinks.length > 1 && alternates[DEFAULT_LANG] && (
+        <link rel="alternate" hreflang="x-default" href={new URL(alternates[DEFAULT_LANG], Astro.site)} />
+      )
+    }
 
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
@@ -42,18 +70,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={OG_LOCALE[lang]} />
     <meta name="twitter:card" content="summary" />
 
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-    <Header />
+    <Header lang={lang} alternates={langSwitch ? alternates : {}} />
     <main>
       <div class="wrap">
         <slot />
       </div>
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>

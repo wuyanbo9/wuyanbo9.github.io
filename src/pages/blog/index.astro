@@ -1,17 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import PostList from '../../components/PostList.astro';
-import { BLOG_TITLE, BLOG_DESCRIPTION } from '../../consts';
-
-const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+import BlogIndex from '../../views/BlogIndex.astro';
 ---
 
-<BaseLayout title={BLOG_TITLE} description={BLOG_DESCRIPTION}>
-  <h1>{BLOG_TITLE}</h1>
-  <p class="tagline">{BLOG_DESCRIPTION}</p>
-
-  {posts.length === 0 ? <p class="muted">Nothing published yet.</p> : <PostList posts={posts} />}
-</BaseLayout>
+<BlogIndex lang="en" />

@@ -1,21 +1,25 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { formatDate } from '../consts';
+import type { Post } from '../posts';
+import { LOCALE, formatDate, type Lang } from '../i18n';
 
 interface Props {
-  posts: CollectionEntry<'blog'>[];
+  posts: Post[];
+  /** Language of the page the list sits on; untranslated posts are tagged with their own. */
+  lang: Lang;
   showDescription?: boolean;
+  showDate?: boolean;
 }
 
-const { posts, showDescription = true } = Astro.props;
+const { posts, lang, showDescription = true, showDate = true } = Astro.props;
 ---
 
 <ul class="posts">
   {
     posts.map((post) => (
-      <li>
-        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-        {showDescription && <p class="excerpt">{post.data.description}</p>}
+      <li lang={post.lang === lang ? undefined : LOCALE[post.lang]}>
+        <a href={post.url}>{post.entry.data.title}</a>
+        {showDescription && <div class="excerpt">{post.entry.data.description}</div>}
+        {showDate && <p class="excerpt">{formatDate(post.entry.data.pubDate, post.lang)}</p>}
       </li>
     ))
   }

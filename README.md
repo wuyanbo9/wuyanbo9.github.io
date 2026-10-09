@@ -14,13 +14,17 @@ npm run check    # type-check .astro/.ts files
 
 ## Writing a post
 
-Create a Markdown file in `src/content/blog/`. The filename becomes the URL:
+Each post is a folder named after its URL slug, with one Markdown file per
+language. Either file may be missing; the other language's lists still show the post.
 
 ```
-src/content/blog/my-post.md  ->  https://wuyb.com/blog/my-post/
+src/content/blog/my-post/en.md  ->  https://wuyb.com/blog/my-post/
+src/content/blog/my-post/zh.md  ->  https://wuyb.com/zh/blog/my-post/
 ```
 
-Frontmatter:
+Post pages show an English / 中文 switch in the header only when both files exist.
+
+Frontmatter (the language comes from the file name, not frontmatter):
 
 ```yaml
 ---
@@ -36,19 +40,22 @@ draft: false              # optional; drafts are excluded from the build
 
 ```
 src/
-  consts.ts             site name, blog title, date formatting
+  consts.ts             site name, URL, copyright
+  i18n.ts               languages, UI strings, date formatting, URL prefixes
+  posts.ts              groups each post's language versions
   content.config.ts     blog collection schema
   content/blog/         posts
   layouts/              BaseLayout (head/SEO), PostLayout
   components/           Header, Footer, PostList
-  pages/                routes
+  pages/                routes (English at the root, Chinese under zh/)
+  views/                page bodies shared by both languages' routes
   styles/global.css     the whole stylesheet
 public/
   CNAME                 custom domain for GitHub Pages — do not delete
   robots.txt
 ```
 
-Homepage copy lives directly in `src/pages/index.astro`.
+Homepage copy lives in `src/views/Home.astro`.
 
 ## Deployment
 
