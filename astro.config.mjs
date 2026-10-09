@@ -21,9 +21,9 @@ export default defineConfig({
     },
   ],
   markdown: {
-    // Dual theme: global.css swaps to the dark values under prefers-color-scheme.
+    // The site is light-only, so code blocks use a single light theme.
     shikiConfig: {
-      themes: { light: 'github-light', dark: 'github-dark' },
+      theme: 'github-light',
     },
   },
   integrations: [
