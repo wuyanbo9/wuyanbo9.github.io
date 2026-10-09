@@ -151,10 +151,15 @@ hr {
 /* Article body */
 .prose {
   font-size: 0.9em;
+  color:hsl(0 0 15);
 }
 
 .prose :is(h2, h3) {
   margin-top: 2rem;
+}
+
+.prose h4 {
+  color:#9a4f24;
 }
 
 .prose img {
