@@ -1,0 +1,36 @@
+{
+  "slug": "lisa",
+  "name": "LiSA",
+  "latinName": null,
+  "nativeName": null,
+  "role": "歌手",
+  "origin": "日本",
+  "image": "/images/artists/lisa.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/lisa/573943518",
+    "spotify": "https://open.spotify.com/artist/0blbVefuxOGltDBa00dspv",
+    "official": "https://www.lxixsxa.com/"
+  },
+  "bio": "LiSA，本名織部里沙，1987 年生于日本岐阜县。2010 年，她因电视动画《Angel Beats!》中的乐队 Girls Dead Monster 受到关注，2011 年以个人身份出道，此后长期演唱动画主题曲。2019 年，《紅蓮華》随《鬼灭之刃》爆红，让她首次登上 NHK 红白歌合战；2020 年，她成为 Oricon 数字单曲榜首位百万下载的女性歌手。",
+  "sources": [
+    {
+      "title": "LiSA profile",
+      "publisher": "Sony Music Japan",
+      "date": null,
+      "url": "https://www.sonymusic.co.jp/artist/lisa/profile/"
+    },
+    {
+      "title": "LiSA「紅蓮華」デジタルSg「累積DL数」歴代3位…",
+      "publisher": "Oricon News",
+      "date": "2020-07-29",
+      "url": "https://www.oricon.co.jp/news/2168069/full/"
+    },
+    {
+      "title": "第70回NHK紅白歌合戦 出場歌手・曲目一覧",
+      "publisher": "mora",
+      "date": "2019-12-20",
+      "url": "https://mora.jp/topics/news/kouhaku2019artist/"
+    }
+  ]
+}

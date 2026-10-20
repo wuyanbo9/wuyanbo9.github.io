@@ -1,0 +1,25 @@
+---
+import { getTrackArtists } from '../lib/content';
+import { artistUrl } from '../lib/paths';
+import type { IssueTrack } from '../lib/types';
+
+interface Props {
+  track: IssueTrack;
+  linked?: boolean;
+}
+
+const { track, linked = true } = Astro.props;
+const artists = getTrackArtists(track);
+---
+
+<span class="artist-links"
+  >{artists.map((artist, index) => (
+    <span class="artist"
+      >{index > 0 && <span class="sep">、</span>}{linked ? (
+        <a href={artistUrl(artist.slug)}>{artist.name}</a>
+      ) : (
+        artist.name
+      )}</span
+    >
+  ))}</span
+>

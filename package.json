@@ -10,13 +10,16 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "sync": "node scripts/sync-playlists.mjs",
+    "sync:baseline": "node scripts/sync-playlists.mjs --baseline"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.2.10",
-    "lxgw-wenkai-screen-webfont": "^1.7.0"
+    "lxgw-wenkai-screen-webfont": "^1.7.0",
+    "marked": "^18.1.1"
   },
   "allowScripts": {
     "esbuild": true

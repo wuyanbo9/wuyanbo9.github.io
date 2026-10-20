@@ -1,0 +1,36 @@
+{
+  "slug": "tanya-chua",
+  "name": "蔡健雅",
+  "latinName": "Tanya Chua",
+  "nativeName": null,
+  "role": "歌手、创作人",
+  "origin": "新加坡",
+  "image": "/images/artists/tanya-chua.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/tanya-chua/387313548",
+    "spotify": "https://open.spotify.com/artist/376pcuw4IgWBMOUwCr8kIm",
+    "official": null
+  },
+  "bio": "蔡健雅，1975 年生于新加坡，1997 年以英文专辑出道，随后转向华语歌坛。2006 年，她凭《双栖动物》首次获得金曲奖最佳国语女演唱人；同年，精选辑《T-Time》中的新歌《Beautiful Love》成为她的代表作之一。2022 年，她以《DEPART》第四次获得金曲奖最佳华语女歌手，并同时拿下年度专辑等奖项。她的作品以克制的旋律与细腻的演唱著称。",
+  "sources": [
+    {
+      "title": "Tanya Chua",
+      "publisher": "NLB Singapore Infopedia",
+      "date": null,
+      "url": "https://www.nlb.gov.sg/main/article-detail?cmsuuid=ca25fc08-e3fb-4691-af11-214a12173c67"
+    },
+    {
+      "title": "第17屆金曲獎頒獎典禮蔡健雅首次拿獎",
+      "publisher": "國家文化記憶庫",
+      "date": "2006-06-10",
+      "url": "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=507516"
+    },
+    {
+      "title": "第33屆金曲獎流行音樂類得獎名單",
+      "publisher": "文化部影視及流行音樂產業局",
+      "date": "2022-07-02",
+      "url": "https://www.bamid.gov.tw/News_Content.aspx?n=3539&s=124257"
+    }
+  ]
+}

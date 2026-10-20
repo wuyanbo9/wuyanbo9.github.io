@@ -1,0 +1,36 @@
+{
+  "slug": "david-bowie",
+  "name": "David Bowie",
+  "latinName": null,
+  "nativeName": null,
+  "role": "歌手、创作人",
+  "origin": "英国",
+  "image": "/images/artists/david-bowie.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/david-bowie/551695",
+    "spotify": "https://open.spotify.com/artist/0oSGxfWSnnOXhD2fKuz2Gy",
+    "official": "https://www.davidbowie.com/"
+  },
+  "bio": "David Bowie（1947–2016），本名 David Robert Jones，生于伦敦布里克斯顿。1969 年凭《Space Oddity》首次进入英国单曲榜前十。1972 年，他创造火星摇滚明星 Ziggy Stardust，发行《Ziggy Stardust》专辑；其中的《Starman》进入英国单曲榜前十，Top of the Pops 的演出把他推向全国。1973 年他让 Ziggy 退场，此后持续以新专辑重塑声音与形象。",
+  "sources": [
+    {
+      "title": "About",
+      "publisher": "David Bowie 官方网站",
+      "date": null,
+      "url": "https://www.davidbowie.com/about"
+    },
+    {
+      "title": "David Bowie: A career that shaped modern pop",
+      "publisher": "BBC News",
+      "date": "2016-01-11",
+      "url": "https://www.bbc.com/news/entertainment-arts-35283114"
+    },
+    {
+      "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "publisher": "Official Charts",
+      "date": "1972-07-01",
+      "url": "https://www.officialcharts.com/albums/david-bowie-the-rise-and-fall-of-ziggy-stardust-and-the-spiders-from-mars/"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+---
+import MusicLayout from '../../../layouts/MusicLayout.astro';
+import SourceList from '../../../music/components/SourceList.astro';
+import { artists, getArtistRecommendations } from '../../../music/lib/content';
+import { formatDate, formatIssueLabel } from '../../../music/lib/format';
+import { markdown } from '../../../music/lib/markdown';
+import { artistsUrl, issueUrl, trackUrl } from '../../../music/lib/paths';
+import type { Artist } from '../../../music/lib/types';
+
+export function getStaticPaths() {
+  return artists.map((artist) => ({
+    params: { slug: artist.slug },
+    props: { artist },
+  }));
+}
+
+interface Props {
+  artist: Artist;
+}
+
+const { artist } = Astro.props;
+const recommendations = getArtistRecommendations(artist.slug);
+const alias = [artist.nativeName, artist.latinName].filter(Boolean).join(' · ');
+const meta = [artist.origin, artist.role].filter(Boolean).join(' · ');
+
+const links = [
+  { label: 'Apple Music', href: artist.links.appleMusic },
+  artist.links.spotify ? { label: 'Spotify', href: artist.links.spotify } : null,
+  artist.links.official ? { label: '官方网站', href: artist.links.official } : null,
+].filter((link): link is { label: string; href: string } => Boolean(link));
+---
+
+<MusicLayout
+  title={artist.name}
+  description={`${artist.name} 在「不一定是新歌」出现过的所有歌曲与资料。`}
+>
+  <a class="backlink" href={artistsUrl()}>← 艺人</a>
+
+  <header class="artist-head">
+    {artist.image && (
+      <div class="portrait-wrap">
+        <img
+          class="portrait"
+          src={artist.image}
+          alt={`${artist.name} 肖像`}
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    )}
+    <div>
+      <h1>{artist.name}</h1>
+      {alias && <p class="artist-alias">{alias}</p>}
+      {meta && <p class="artist-meta">{meta}</p>}
+      {artist.imageCredit && (
+        <p class="artist-credit">图片：{artist.imageCredit}</p>
+      )}
+    </div>
+  </header>
+
+  {artist.bio && <div class="prose" set:html={markdown(artist.bio)} />}
+
+  <section class="artist-section" aria-labelledby="recommendations-title">
+    <h2 id="recommendations-title">本刊推荐</h2>
+    <ul class="recommendations">
+      {recommendations.map(({ issue, track }) => (
+        <li>
+          <span class="rec-date">
+            <a href={issueUrl(issue.slug)}>{formatDate(issue.publishedAt)}</a>
+          </span>
+          <div>
+            <span class="rec-title">
+              <a href={trackUrl(issue.slug, track.slug)}>{track.title}</a>
+            </span>
+            <span class="rec-meta">
+              {formatIssueLabel(issue.number)} · {track.album}
+            </span>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="artist-section" aria-labelledby="links-title">
+    <h2 id="links-title">链接</h2>
+    <ul class="link-list">
+      {links.map((link) => (
+        <li>
+          <a href={link.href} target="_blank" rel="noreferrer">{link.label} ↗</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {artist.sources.length > 0 && (
+    <section class="artist-section" aria-labelledby="sources-title">
+      <h2 id="sources-title">来源</h2>
+      <SourceList sources={artist.sources} />
+    </section>
+  )}
+</MusicLayout>

@@ -1,0 +1,20 @@
+---
+import MusicLayout from '../../../layouts/MusicLayout.astro';
+import IssueTeaser from '../../../music/components/IssueTeaser.astro';
+import { issues } from '../../../music/lib/content';
+---
+
+<MusicLayout title="往期" description="「不一定是新歌」的全部期数，按时间倒序排列。">
+  <header class="page-head">
+    <h1>往期</h1>
+    <p>{issues.length} 期，按时间倒序排列。</p>
+  </header>
+
+  {issues.length > 0 ? (
+    <ul class="posts">
+      {issues.map((issue) => <IssueTeaser issue={issue} />)}
+    </ul>
+  ) : (
+    <p>还没有期数。下一期见。</p>
+  )}
+</MusicLayout>

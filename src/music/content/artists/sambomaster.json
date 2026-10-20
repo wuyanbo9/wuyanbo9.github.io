@@ -1,0 +1,36 @@
+{
+  "slug": "sambomaster",
+  "name": "Sambomaster",
+  "latinName": null,
+  "nativeName": "サンボマスター",
+  "role": "乐队",
+  "origin": "日本",
+  "image": "/images/artists/sambomaster.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/sambomaster/531631256",
+    "spotify": null,
+    "official": "https://www.sambomaster.com/"
+  },
+  "bio": "Sambomaster（サンボマスター）是 2000 年 2 月组成的三人摇滚乐队，成员为山口隆（主唱、吉他）、近藤洋一（贝斯）与木内泰史（鼓）。乐队于 2003 年正式出道，以炽烈的现场和直白的日语歌词著称；《青春狂騒曲》曾用作《火影忍者》第五首片头曲。",
+  "sources": [
+    {
+      "title": "PROFILE",
+      "publisher": "Sambomaster 官方网站",
+      "date": null,
+      "url": "https://www.sambomaster.com/profile/"
+    },
+    {
+      "title": "サンボマスターのシングル売上TOP17作品",
+      "publisher": "Oricon",
+      "date": null,
+      "url": "https://www.oricon.co.jp/prof/307671/rank/single/"
+    },
+    {
+      "title": "Sambomaster",
+      "publisher": "Apple Music",
+      "date": null,
+      "url": "https://music.apple.com/us/artist/sambomaster/531631256"
+    }
+  ]
+}

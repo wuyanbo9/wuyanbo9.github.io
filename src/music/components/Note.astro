@@ -1,0 +1,56 @@
+---
+import { playlistById } from '../lib/content';
+import { formatDuration, formatYear } from '../lib/format';
+import { markdown } from '../lib/markdown';
+import type { IssueTrack } from '../lib/types';
+import ArtistLinks from './ArtistLinks.astro';
+import SourceList from './SourceList.astro';
+
+interface Props {
+  track: IssueTrack;
+  index: number;
+}
+
+const { track, index } = Astro.props;
+const playlist = playlistById.get(track.sourcePlaylistId);
+---
+
+<article class="note" id={track.slug}>
+  <header class="note-head">
+    <img
+      class="note-cover"
+      src={track.artwork}
+      alt={`${track.album} 封面`}
+      width="600"
+      height="600"
+      loading="lazy"
+      decoding="async"
+    />
+    <div class="note-heading">
+      <p class="note-kicker">
+        {String(index + 1).padStart(2, '0')} / {playlist?.name ?? 'Apple Music'}
+      </p>
+      <h2>{track.title}</h2>
+      <p class="note-meta">
+        <ArtistLinks track={track} /> · {formatYear(track.releaseDate)} · {formatDuration(
+          track.durationMs,
+        )}
+      </p>
+      <p class="note-listen">
+        <a href={track.appleMusicUrl} target="_blank" rel="noreferrer">Apple Music ↗</a>
+        {track.spotifyUrl && (
+          <a href={track.spotifyUrl} target="_blank" rel="noreferrer">Spotify ↗</a>
+        )}
+      </p>
+    </div>
+  </header>
+
+  <div class="prose" set:html={markdown(track.story)} />
+
+  {track.sources.length > 0 && (
+    <div class="sources">
+      <p class="sources-label">来源</p>
+      <SourceList sources={track.sources} />
+    </div>
+  )}
+</article>

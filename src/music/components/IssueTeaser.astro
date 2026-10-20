@@ -1,0 +1,20 @@
+---
+import { formatDate, formatIssueLabel } from '../lib/format';
+import { issueUrl } from '../lib/paths';
+import type { Issue } from '../lib/types';
+
+interface Props {
+  issue: Issue;
+}
+
+const { issue } = Astro.props;
+---
+
+<li>
+  <a href={issueUrl(issue.slug)}>{issue.title}</a>
+  <p class="post-meta">
+    <time datetime={issue.publishedAt}>{formatDate(issue.publishedAt)}</time>
+    {` · ${formatIssueLabel(issue.number)}${issue.label ? ` · ${issue.label}` : ''} · ${issue.tracks.length} 首`}
+  </p>
+  <p class="excerpt">{issue.summary}</p>
+</li>

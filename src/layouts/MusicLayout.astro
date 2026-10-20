@@ -1,0 +1,36 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { site } from '../music/lib/content';
+import { artistsUrl, issuesUrl, musicHome, playlistsUrl } from '../music/lib/paths';
+import '../styles/music.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+}
+
+const { title, description = site.description, type = 'website' } = Astro.props;
+
+// The weekly is written in Chinese throughout, so its pages are always zh.
+const section = {
+  name: site.name,
+  href: musicHome(),
+  links: [
+    { label: '往期', href: issuesUrl() },
+    { label: '艺人', href: artistsUrl() },
+    { label: '歌单', href: playlistsUrl() },
+  ],
+};
+---
+
+<BaseLayout
+  lang="zh"
+  title={title}
+  description={description}
+  type={type}
+  siteName={site.name}
+  section={section}
+>
+  <slot />
+</BaseLayout>

@@ -1,0 +1,46 @@
+{
+  "syncedAt": "2026-10-20T04:17:55.556Z",
+  "syncedDate": "2026-10-19",
+  "playlists": [
+    {
+      "id": "good-j-pop",
+      "name": "Good J-Pop",
+      "url": "https://music.apple.com/us/playlist/good-j-pop/pl.u-LdbqEgdF9obqA",
+      "region": "日本",
+      "updatedLabel": "Updated 2 Weeks Ago",
+      "trackCount": 14
+    },
+    {
+      "id": "good-k-pop",
+      "name": "Good K-Pop",
+      "url": "https://music.apple.com/us/playlist/good-k-pop/pl.u-ZmblVDoFKMY5X",
+      "region": "韩国",
+      "updatedLabel": "Updated 2 Weeks Ago",
+      "trackCount": 6
+    },
+    {
+      "id": "good-new-mandopop",
+      "name": "Good New Mandopop",
+      "url": "https://music.apple.com/us/playlist/good-new-mandopop/pl.u-vxy6kL4ugeYoj",
+      "region": "华语",
+      "updatedLabel": "Updated Thursday",
+      "trackCount": 8
+    },
+    {
+      "id": "good-pop",
+      "name": "Good Pop",
+      "url": "https://music.apple.com/us/playlist/good-pop/pl.u-LdbqEoBF9obqA",
+      "region": "流行",
+      "updatedLabel": "Updated 2 Weeks Ago",
+      "trackCount": 27
+    },
+    {
+      "id": "good-rock",
+      "name": "Good Rock",
+      "url": "https://music.apple.com/us/playlist/good-rock/pl.u-LdbqEz5T9obqA",
+      "region": "摇滚",
+      "updatedLabel": null,
+      "trackCount": 14
+    }
+  ]
+}

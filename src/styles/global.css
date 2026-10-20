@@ -49,6 +49,10 @@ body {
 
 .site-header .brand {
   font-weight: 600;
+}
+
+/* Whatever carries .grow pushes the rest of the nav to the right edge. */
+.site-header .grow {
   margin-inline-end: auto;
 }
 
@@ -58,6 +62,7 @@ body {
 }
 
 .site-header .brand a,
+.site-header .section a,
 .site-header a[aria-current='page'] {
   color: var(--fg);
 }

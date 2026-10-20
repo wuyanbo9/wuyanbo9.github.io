@@ -1,0 +1,36 @@
+{
+  "slug": "ariana-grande",
+  "name": "Ariana Grande",
+  "latinName": null,
+  "nativeName": null,
+  "role": "歌手、演员",
+  "origin": "美国",
+  "image": "/images/artists/ariana-grande.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/ariana-grande/412778295",
+    "spotify": null,
+    "official": null
+  },
+  "bio": "Ariana Grande 是 1993 年出生于佛罗里达州博卡拉顿的美国歌手与演员。她以 Nickelodeon 剧集《Victorious》和《Sam & Cat》出道，2013 年发行首张专辑《Yours Truly》，2014 年的《My Everything》让她进入流行巨星行列。2017 年曼彻斯特演唱会袭击后，她组织了 One Love Manchester 慈善演唱会。",
+  "sources": [
+    {
+      "title": "Ariana Grande",
+      "publisher": "Apple Music",
+      "date": null,
+      "url": "https://music.apple.com/us/artist/ariana-grande/412778295"
+    },
+    {
+      "title": "Ariana Grande soars up chart after One Love concert",
+      "publisher": "BBC News",
+      "date": "2017-06-09",
+      "url": "https://www.bbc.com/news/entertainment-arts-40227440"
+    },
+    {
+      "title": "Ariana Grande's One Last Time soars to new chart peak after the One Love Manchester concert",
+      "publisher": "Official Charts",
+      "date": "2017-06-09",
+      "url": "https://www.officialcharts.com/chart-news/ariana-grande-s-one-last-time-soars-to-new-chart-peak-after-the-one-love-manchester-concert__19384/"
+    }
+  ]
+}

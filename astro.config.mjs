@@ -28,6 +28,15 @@ export default defineConfig({
   },
   integrations: [
     // Must match LANGS / LOCALE in src/i18n.ts: English at the root, other languages under /<lang>/.
-    sitemap({ i18n: { defaultLocale: 'en', locales: { en: 'en-US', zh: 'zh-CN' } } }),
+    sitemap({
+      i18n: { defaultLocale: 'en', locales: { en: 'en-US', zh: 'zh-CN' } },
+      serialize(item) {
+        // The music weekly exists only in Chinese, so it has no translation to point at.
+        if (new URL(item.url).pathname.startsWith('/music')) {
+          return { ...item, links: undefined };
+        }
+        return item;
+      },
+    }),
   ],
 });

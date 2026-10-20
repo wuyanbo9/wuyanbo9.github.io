@@ -1,0 +1,39 @@
+{
+  "playlists": [
+    {
+      "id": "good-j-pop",
+      "name": "Good J-Pop",
+      "region": "日本",
+      "description": "日本流行与动画主题曲",
+      "url": "https://music.apple.com/us/playlist/good-j-pop/pl.u-LdbqEgdF9obqA"
+    },
+    {
+      "id": "good-k-pop",
+      "name": "Good K-Pop",
+      "region": "韩国",
+      "description": "从二代团到当下的韩流",
+      "url": "https://music.apple.com/us/playlist/good-k-pop/pl.u-ZmblVDoFKMY5X"
+    },
+    {
+      "id": "good-new-mandopop",
+      "name": "Good New Mandopop",
+      "region": "华语",
+      "description": "华语流行的新旧交集",
+      "url": "https://music.apple.com/us/playlist/good-new-mandopop/pl.u-vxy6kL4ugeYoj"
+    },
+    {
+      "id": "good-pop",
+      "name": "Good Pop",
+      "region": "流行",
+      "description": "全球流行乐的常备曲目",
+      "url": "https://music.apple.com/us/playlist/good-pop/pl.u-LdbqEoBF9obqA"
+    },
+    {
+      "id": "good-rock",
+      "name": "Good Rock",
+      "region": "摇滚",
+      "description": "从经典摇滚到当下独立",
+      "url": "https://music.apple.com/us/playlist/good-rock/pl.u-LdbqEz5T9obqA"
+    }
+  ]
+}

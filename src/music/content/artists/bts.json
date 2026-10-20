@@ -1,0 +1,36 @@
+{
+  "slug": "bts",
+  "name": "BTS",
+  "latinName": null,
+  "nativeName": "방탄소년단",
+  "role": "团体",
+  "origin": "韩国",
+  "image": "/images/artists/bts.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/bts/883131348",
+    "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX",
+    "official": "https://bts.ibighit.com/"
+  },
+  "bio": "BTS 是 2013 年出道的韩国七人男子团体，成员为 RM、Jin、SUGA、j-hope、Jimin、V 与 Jung Kook，隶属 Big Hit Entertainment（现为 HYBE 旗下 BIGHIT MUSIC）。2017 年的《Spring Day》成为他们最长寿的韩国音源作品之一；2020 年，他们凭《Dynamite》首次登上 Billboard Hot 100 冠军，2021 年首次获得格莱美提名。",
+  "sources": [
+    {
+      "title": "BTS profile",
+      "publisher": "BIGHIT MUSIC",
+      "date": null,
+      "url": "https://ibighit.com/en/bts/profile/"
+    },
+    {
+      "title": "BTS",
+      "publisher": "GRAMMY.com",
+      "date": "2026-09-23",
+      "url": "https://www.grammy.com/artists/bts/287749/"
+    },
+    {
+      "title": "BTS's 'Spring Day' secures ninth consecutive year on Melon's year-end chart",
+      "publisher": "Chosun Biz",
+      "date": "2026-01-08",
+      "url": "https://biz.chosun.com/en/en-entertainment/2026/01/08/GVSDKENJKBAIXKLN7IVNJ7NIZE/"
+    }
+  ]
+}

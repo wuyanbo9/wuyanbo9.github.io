@@ -1,0 +1,542 @@
+/*
+ * Styles for the music weekly at /music/.
+ * Everything here leans on the tokens and type scale in global.css — this file
+ * only adds the parts the main site has no equivalent for.
+ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Shared furniture */
+.page-intro {
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.page-head {
+  margin-bottom: 2.5rem;
+}
+
+.page-head h1 {
+  margin-bottom: 0.25rem;
+}
+
+.page-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.backlink {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.backlink:hover {
+  color: var(--accent);
+}
+
+.section-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+/* Home timeline */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  padding-top: 1.75rem;
+  margin-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item:first-child {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+}
+
+.timeline-meta {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.timeline-title a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.timeline-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.timeline-summary {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.timeline-more {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* The issue list reuses .posts from global.css; keep its date inline with the rest of the meta. */
+.posts .post-meta time {
+  display: inline;
+}
+
+/* Track index */
+.track-index {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track-index li {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr auto;
+  gap: 0 0.5rem;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.track-index li:last-child {
+  border-bottom: 0;
+}
+
+.track-index .number {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.track-index .track-title a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.track-index .track-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.track-index .track-artist {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: end;
+}
+
+.track-index .track-artist a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.track-index .track-artist a:hover {
+  color: var(--accent);
+}
+
+/* Issue page */
+.issue-head {
+  margin-bottom: 2.5rem;
+}
+
+.issue-intro {
+  margin-top: 1rem;
+}
+
+.contents {
+  margin-bottom: 1rem;
+}
+
+/* One track */
+.note {
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.note-head {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.note-cover {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.note-heading {
+  min-width: 0;
+}
+
+.note-kicker {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.note-heading h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.note-meta {
+  margin: 0 0 0.3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.note-meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.note-meta a:hover {
+  color: var(--accent);
+}
+
+.note-listen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.artist-links .sep {
+  color: var(--muted);
+}
+
+/* Sources */
+.sources {
+  margin-top: 1.5rem;
+}
+
+.sources-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.source-list li {
+  margin-bottom: 0.25rem;
+}
+
+.source-list a {
+  color: var(--muted);
+}
+
+.source-list a:hover {
+  color: var(--accent);
+}
+
+/* Issue footer */
+.issue-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.issue-footer .other-issue {
+  display: block;
+  max-width: 48%;
+  text-decoration: none;
+}
+
+.issue-footer .other-issue span {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Artist index */
+.artist-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.artist-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.artist-list li:last-child {
+  border-bottom: 0;
+}
+
+.artist-list .artist-name {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.artist-list .artist-name:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.artist-list .artist-note {
+  margin-left: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.artist-list .artist-count {
+  flex: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Artist page */
+.artist-head {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.portrait-wrap {
+  flex: none;
+}
+
+.portrait {
+  width: 104px;
+  height: 104px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.artist-head h1 {
+  margin-bottom: 0.2rem;
+}
+
+.artist-alias,
+.artist-head .artist-meta,
+.artist-credit {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.artist-credit {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.artist-section {
+  margin-top: 2.5rem;
+}
+
+.artist-section h2 {
+  margin-top: 0;
+}
+
+.recommendations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recommendations li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.recommendations li:last-child {
+  border-bottom: 0;
+}
+
+.rec-date {
+  flex: none;
+  width: 5.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.rec-date a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rec-date a:hover {
+  color: var(--accent);
+}
+
+.rec-title a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.rec-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.rec-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+/* Playlists */
+.playlist-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.playlist-item {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.playlist-item:last-child {
+  border-bottom: 0;
+}
+
+.playlist-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.playlist-head h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.playlist-name a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.playlist-name a:hover {
+  color: var(--accent);
+}
+
+.playlist-count {
+  flex: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.playlist-meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.sync-note {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .note-head,
+  .artist-head {
+    gap: 0.9rem;
+  }
+
+  .note-cover {
+    width: 64px;
+    height: 64px;
+  }
+
+  .portrait {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* The artist column has nowhere to go at this width; let it sit under the title. */
+  .track-index li {
+    grid-template-columns: 2.25rem 1fr;
+  }
+
+  .track-index .track-artist {
+    grid-column: 2;
+    text-align: start;
+  }
+
+  .issue-footer .other-issue {
+    max-width: none;
+  }
+}

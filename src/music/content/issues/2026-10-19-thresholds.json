@@ -1,0 +1,211 @@
+{
+  "number": 2,
+  "slug": "2026-10-19-thresholds",
+  "publishedAt": "2026-10-19",
+  "period": null,
+  "label": "主题试刊",
+  "title": "门还没有关上的时候",
+  "summary": "换一种选法：从歌单里从未在这里出现过的歌中，挑出五首主题最相近的——一场最后的演出、一段少年出发前的片头、一次离开后才完成的录音、一场被袭击改写的告别，和一个不肯结束的瞬间。它们都站在同一道门口：门最终会关上，歌声还留在门缝里。",
+  "intro": "这一期是一次试刊。\n\n选歌的方法换了一下：不再看「最近新增」，而是回到整张歌单，从那些从未在这里出现过的歌里，找出故事与主题最相近的五首。没有按发行年份排队，也没有偏爱新歌。它们碰巧都在唱同一种时刻——结束已经发生，或者即将发生，而人还站在门口。\n\n1973 年 7 月，David Bowie 在 Hammersmith Odeon 说完「这是我们最后一场演出」，然后用《Rock 'n' Roll Suicide》送走 Ziggy Stardust。2004 年，Sambomaster 为《火影忍者》的「佐助夺还篇」唱响片头曲，少年们正朝着一场离散出发。Freddie Mercury 没能听见 Queen 用他的声音完成《I Was Born To Love You》——那是他走后才做完的录音。2017 年曼彻斯特的袭击之后，Ariana Grande 把一首旧情歌重新交给观众，让它成为告别。而 Taylor Swift 在重录版里再唱《Long Live》，唱的是一段早已结束、却仍不肯散场的青春。\n\n这五首歌不是按年代选的。它们只是恰好都相信：结束不是一瞬间，而是一段还需要被唱完的时间。",
+  "tracks": [
+    {
+      "slug": "rock-n-roll-suicide",
+      "songId": "1039797288",
+      "title": "Rock 'n' Roll Suicide (2012 Remaster)",
+      "artistIds": ["david-bowie"],
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+      "releaseDate": "1972-06-16",
+      "durationMs": 178267,
+      "genre": "Rock",
+      "sourcePlaylistId": "good-rock",
+      "artwork": "/images/albums/1039797288.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/rock-n-roll-suicide-2012-remaster/1039796877?i=1039797288",
+      "spotifyUrl": null,
+      "story": "《Rock 'n' Roll Suicide》原本是《The Rise and Fall of Ziggy Stardust and the Spiders from Mars》的最后一首歌：Ziggy 的故事在台上结束，专辑也在这一句「Give me your hands, 'cause you're wonderful」里落幕。它并不像一个句号。歌名里有「suicide」，歌词却一直在向某个站在末路的人伸手——「Oh no love, you're not alone」。Bowie 唱的既是角色，也是台下那些觉得自己无处可去的人。\n\n1973 年 7 月 3 日，伦敦 Hammersmith Odeon。演出接近尾声，Bowie 走到台前说：「This is the last show that we'll ever do.」然后乐队奏响这首歌。纪录片导演 D.A. Pennebaker 拍下了整场演出，这段告别后来被剪进演唱会电影。那句「最后一场」当时听起来像 Bowie 要退出，实际上退场的是 Ziggy Stardust。角色留在了台上，人继续往前走。\n\n单曲在 1974 年才单独发行，英国榜最高第 22 位，停留 7 周。它的商业成绩远不如《Starman》，却成了另一种意义上的结尾：一场演出结束，一个时代被留在门内，而歌把门缝撑住，让后来的人还能听见里面的掌声。",
+      "sources": [
+        {
+          "title": "Ziggy killed off forty years ago tonight",
+          "publisher": "David Bowie 官方网站",
+          "date": "2013-07-03",
+          "url": "https://www.davidbowie.com/2013/2013/07/04/ziggy-killed-off-forty-years-ago-tonight"
+        },
+        {
+          "title": "Farewell Speech / Rock 'n' Roll Suicide (Live at Hammersmith Odeon, 7/3/1973)",
+          "publisher": "Apple Music",
+          "date": null,
+          "url": "https://music.apple.com/us/song/farewell-speech-rock-n-roll-suicide-live-at-hammersmith/1401502185"
+        },
+        {
+          "title": "ROCK 'N' ROLL SUICIDE – DAVID BOWIE",
+          "publisher": "Official Charts",
+          "date": null,
+          "url": "https://www.officialcharts.com/songs/david-bowie-rock-n-roll-suicide/"
+        },
+        {
+          "title": "Rock 'n' Roll Suicide (2012 Remaster)",
+          "publisher": "Apple Music",
+          "date": "1972-06-16",
+          "url": "https://music.apple.com/us/album/rock-n-roll-suicide-2012-remaster/1039796877?i=1039797288"
+        }
+      ]
+    },
+    {
+      "slug": "seishun-kyousoukyoku",
+      "songId": "1538923599",
+      "title": "青春狂騒曲",
+      "artistIds": ["sambomaster"],
+      "album": "Sambomaster Kyuukyoku Best",
+      "releaseDate": "2004-12-01",
+      "durationMs": 290173,
+      "genre": "Rock",
+      "sourcePlaylistId": "good-rock",
+      "artwork": "/images/albums/1538923599.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/seishun-kyousoukyoku/1538922872?i=1538923599",
+      "spotifyUrl": null,
+      "story": "《青春狂騒曲》是 Sambomaster 在 2004 年 12 月 1 日发行的单曲，也是《火影忍者》第五首片头曲（第 104 至 128 话）。那一段故事叫「佐助夺还篇」：鸣人和同伴离开木叶，去追一个决意斩断羁绊的人。片头曲每集只响一分半钟，却比剧情更早地告诉观众，这一程不会轻松。\n\n歌是山口隆写的。没有精巧的比喻，只有嘶喊、失真吉他和一句接一句的「青春」；它把年轻唱成一种吵闹的、还不肯认输的状态。Sambomaster 是 2000 年 2 月组成的三人乐队，2003 年正式出道，唱的是直白的日语摇滚——不躲进英文，也不把愤怒磨平。这样的声音放在一部少年动画的片头，反而正好：追逐、失败、再喊一次。\n\n单曲在 Oricon 周榜最高第 15 位，停留 12 周。这个成绩不算耀眼，但这首歌后来一直留在听过它的人那里。故事里的少年最终没能把朋友带回来；片头曲却每次都在同一秒重新开始。所谓青春，大概就是明知结局，仍然把音量拧到最大。",
+      "sources": [
+        {
+          "title": "青春狂騒曲",
+          "publisher": "Apple Music",
+          "date": "2004-12-01",
+          "url": "https://music.apple.com/us/album/seishun-kyousoukyoku/1538922872?i=1538923599"
+        },
+        {
+          "title": "サンボマスターのシングル売上TOP17作品",
+          "publisher": "Oricon",
+          "date": null,
+          "url": "https://www.oricon.co.jp/prof/307671/rank/single/"
+        },
+        {
+          "title": "青春狂騒曲の歌詞",
+          "publisher": "Oricon",
+          "date": null,
+          "url": "https://www.oricon.co.jp/prof/307671/lyrics/210824/"
+        },
+        {
+          "title": "サンボマスター / 音楽ダウンロード",
+          "publisher": "Sony Music Japan",
+          "date": null,
+          "url": "https://www.sonymusic.co.jp/Music/Arch/SR/Sambomaster/download/d2.html"
+        },
+        {
+          "title": "PROFILE",
+          "publisher": "Sambomaster 官方网站",
+          "date": null,
+          "url": "https://www.sambomaster.com/profile/"
+        }
+      ]
+    },
+    {
+      "slug": "i-was-born-to-love-you",
+      "songId": "6781076660",
+      "title": "I Was Born To Love You",
+      "artistIds": ["queen"],
+      "album": "Made In Heaven (Deluxe Edition)",
+      "releaseDate": "1995-11-06",
+      "durationMs": 289881,
+      "genre": "Rock",
+      "sourcePlaylistId": "good-rock",
+      "artwork": "/images/albums/6781076660.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/i-was-born-to-love-you/6781076648?i=6781076660",
+      "spotifyUrl": null,
+      "story": "《I Was Born To Love You》第一次出现是在 Freddie Mercury 1985 年的个人专辑《Mr. Bad Guy》里。那首歌由他一个人写、一个人唱，是这张专辑的主打单曲，在英国榜最高第 11 位。它没有 Queen 式的宏大编曲，只有一种几乎直白的快乐：我生来就是为了爱你。\n\nFreddie 在 1991 年去世后，剩下的三个人回到录音室，把他当年的歌声重新取出来，再铺上新的吉他与鼓。1995 年，这个版本收进 Queen 的最后一张录音室专辑《Made in Heaven》。母带里那个声音没有变，唱歌的人已经不在了；因此同一句「I was born to love you」听起来既是情话，也是一次迟到的应答。\n\n它在日本的生命比在英国更长。2004 年，富士电视台把这首歌用作木村拓哉主演的《Pride》的主题曲；冰球场上的青春与这首歌一起，重新把 Queen 带回日本听众的日常。一首 1985 年的情歌，先成为告别，又成为重逢。\n\n所以这首歌最动人的地方不是「最后」，而是它拒绝变成最后：声音留在带子上，乐队替他把剩下的部分做完。门关上了，歌还在门里唱。",
+      "sources": [
+        {
+          "title": "I Was Born To Love You",
+          "publisher": "Apple Music",
+          "date": "1995-11-06",
+          "url": "https://music.apple.com/us/album/i-was-born-to-love-you/6781076648?i=6781076660"
+        },
+        {
+          "title": "I WAS BORN TO LOVE YOU – FREDDIE MERCURY",
+          "publisher": "Official Charts",
+          "date": "1985-04-20",
+          "url": "https://www.officialcharts.com/songs/freddie-mercury-i-was-born-to-love-you/"
+        },
+        {
+          "title": "The Band",
+          "publisher": "QueenOnline",
+          "date": null,
+          "url": "https://www.queenonline.com/the_band"
+        },
+        {
+          "title": "Pride (Japanese TV series)",
+          "publisher": "Wikipedia",
+          "date": null,
+          "url": "https://en.wikipedia.org/wiki/Pride_(Japanese_TV_series)"
+        }
+      ]
+    },
+    {
+      "slug": "one-last-time",
+      "songId": "1440852679",
+      "title": "One Last Time",
+      "artistIds": ["ariana-grande"],
+      "album": "My Everything (Bonus Tracks Edition)",
+      "releaseDate": "2014-08-25",
+      "durationMs": 197278,
+      "genre": "Pop",
+      "sourcePlaylistId": "good-pop",
+      "artwork": "/images/albums/1440852679.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/one-last-time/1440852353?i=1440852679",
+      "spotifyUrl": null,
+      "story": "《One Last Time》收录在 Ariana Grande 2014 年的专辑《My Everything》里。它原本是一首分手歌：两个人已经决定结束，唱歌的人只想要最后一晚，再被送回家一次。歌里没有控诉，只有一种不太体面的请求。它后来作为单曲发行，成绩不差，却远不如同专辑的《Problem》和《Break Free》那样喧闹。\n\n2017 年 5 月 22 日，Ariana 在曼彻斯特竞技场开唱，散场时发生恐怖袭击，22 人死亡。那不是一首歌能够解释的事。几天后，她把《One Last Time》重新发行为慈善单曲；6 月 4 日，One Love Manchester 慈善演唱会在同一座城市举行，她唱了这首歌，台下有幸存者，也有从各地赶来的听众。\n\n歌词一个字也没有改，意思却变了。「最后一次」不再只是恋人之间的告别，而是对那场演出、对那些没能回家的人的一次集体告别。歌曲在英国单曲榜升到第 2 位，成为它在英国的最高成绩。\n\n一首原本关于放手的歌，最后被一座城市用来抓住彼此。它没有提供答案，只是让几万人同时唱出同一句请求：再给我一次，送你回家的机会。",
+      "sources": [
+        {
+          "title": "One Last Time",
+          "publisher": "Apple Music",
+          "date": "2014-08-25",
+          "url": "https://music.apple.com/us/album/one-last-time/1440852353?i=1440852679"
+        },
+        {
+          "title": "Ariana Grande soars up chart after One Love concert",
+          "publisher": "BBC News",
+          "date": "2017-06-09",
+          "url": "https://www.bbc.com/news/entertainment-arts-40227440"
+        },
+        {
+          "title": "Ariana Grande's One Last Time soars to new chart peak after the One Love Manchester concert",
+          "publisher": "Official Charts",
+          "date": "2017-06-09",
+          "url": "https://www.officialcharts.com/chart-news/ariana-grande-s-one-last-time-soars-to-new-chart-peak-after-the-one-love-manchester-concert__19384/"
+        }
+      ]
+    },
+    {
+      "slug": "long-live",
+      "songId": "1690840818",
+      "title": "Long Live (Taylor's Version)",
+      "artistIds": ["taylor-swift"],
+      "album": "Speak Now (Taylor's Version)",
+      "releaseDate": "2023-07-07",
+      "durationMs": 317960,
+      "genre": "Pop",
+      "sourcePlaylistId": "good-pop",
+      "artwork": "/images/albums/1690840818.jpg",
+      "appleMusicUrl": "https://music.apple.com/us/album/long-live-taylors-version/1690839749?i=1690840818",
+      "spotifyUrl": null,
+      "story": "《Long Live》是 2010 年《Speak Now》的最后一首歌。Taylor Swift 写它的时候，Fearless 巡演刚刚结束。歌里没有虚构的爱情故事，唱的是她和乐队、和台下的人一起走过的那段路：「I had the time of my life fighting dragons with you」。她把巡演写成一场短暂的王国，知道它终会结束，仍然要举杯祝它长寿。\n\n十三年后，她重新录了这首歌。2023 年 7 月 7 日，《Speak Now (Taylor's Version)》发行，主线曲目仍以《Long Live (Taylor's Version)》收尾——和原版一样，放在最后。重录的原因并不神秘：前六张专辑的母带不在她手里，于是她把歌唱一遍，把属于自己的版本拿回来。同一首歌，因此有了两个「最后」：一个是 2010 年《Speak Now》的最后，一个是 2023 年重录版的最后。\n\n专辑在美国 Billboard 200 上空降冠军，首周 716,000 个等效专辑单位，是 2023 年当时最大的首周成绩。数字属于专辑，但《Long Live》关心的不是数字。它反复唱「long live」，并不是不肯承认结束，而是承认之后仍然选择记住。\n\n一首歌可以让一个已经关门的时刻继续亮着。Taylor 在歌里唱「One day, we will be remembered」；她先把这一切唱成了值得被记住的样子。",
+      "sources": [
+        {
+          "title": "Long Live (Taylor's Version)",
+          "publisher": "Apple Music",
+          "date": "2023-07-07",
+          "url": "https://music.apple.com/us/album/long-live-taylors-version/1690839749?i=1690840818"
+        },
+        {
+          "title": "Speak Now (Taylor's Version)",
+          "publisher": "Apple Music",
+          "date": "2023-07-07",
+          "url": "https://music.apple.com/us/album/speak-now-taylors-version/1690839749"
+        },
+        {
+          "title": "Taylor Swift's 'Speak Now': Why Is It Her Biggest 'Taylor's Version'",
+          "publisher": "Billboard",
+          "date": "2023-07-18",
+          "url": "https://www.billboard.com/music/chart-beat/taylor-swift-speak-now-taylors-version-five-burning-questions-1235373899/"
+        }
+      ]
+    }
+  ]
+}

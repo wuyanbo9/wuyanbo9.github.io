@@ -1,6 +1,6 @@
 ---
 import { Font } from 'astro:assets';
-import Header from '../components/Header.astro';
+import Header, { type SectionNav } from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_NAME } from '../consts';
 import { DEFAULT_LANG, LOCALE, OG_LOCALE, UI, localize, type Lang } from '../i18n';
@@ -18,6 +18,10 @@ interface Props {
   alternates?: Partial<Record<Lang, string>>;
   /** Show the header language switch. Only post pages do, and only when a translation exists. */
   langSwitch?: boolean;
+  /** Name this page belongs to, for the title suffix and og:site_name. Sub-sites pass their own. */
+  siteName?: string;
+  /** Set on pages inside a sub-site: swaps the header nav and drops the blog feed link. */
+  section?: SectionNav;
 }
 
 const {
@@ -27,9 +31,11 @@ const {
   lang = DEFAULT_LANG,
   alternates = {},
   langSwitch = false,
+  siteName = SITE_NAME,
+  section,
 } = Astro.props;
 
-const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+const pageTitle = title ? `${title} · ${siteName}` : siteName;
 const pageDescription = description ?? UI[lang].siteDescription;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const alternateLinks = Object.entries(alternates) as [Lang, string][];
@@ -43,12 +49,16 @@ const alternateLinks = Object.entries(alternates) as [Lang, string][];
     <link rel="sitemap" href="/sitemap-index.xml" />
     <Font cssVariable="--font-body" preload />
 
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title={`${SITE_NAME} — ${UI[lang].blogTitle}`}
-      href={new URL(localize('/rss.xml', lang), Astro.site)}
-    />
+    {
+      !section && (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`${SITE_NAME} — ${UI[lang].blogTitle}`}
+          href={new URL(localize('/rss.xml', lang), Astro.site)}
+        />
+      )
+    }
     {
       alternateLinks.length > 1 &&
         alternateLinks.map(([l, href]) => (
@@ -69,14 +79,14 @@ const alternateLinks = Object.entries(alternates) as [Lang, string][];
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:locale" content={OG_LOCALE[lang]} />
     <meta name="twitter:card" content="summary" />
 
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-    <Header lang={lang} alternates={langSwitch ? alternates : {}} />
+    <Header lang={lang} alternates={langSwitch ? alternates : {}} section={section} />
     <main>
       <div class="wrap">
         <slot />

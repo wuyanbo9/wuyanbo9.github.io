@@ -1,0 +1,420 @@
+{
+  "lastSyncAt": "2026-10-20T04:17:55.556Z",
+  "initializedAt": "2026-10-20T04:04:43.234Z",
+  "seenTracks": {
+    "280787183": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Beautiful Love",
+      "artist": "Tanya Chua",
+      "playlistId": "good-new-mandopop"
+    },
+    "285143165": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Juke Box Hero",
+      "artist": "Foreigner",
+      "playlistId": "good-rock"
+    },
+    "322847216": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Dangerous",
+      "artist": "Michael Jackson",
+      "playlistId": "good-pop"
+    },
+    "520208666": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "愛你",
+      "artist": "Kimberley",
+      "playlistId": "good-new-mandopop"
+    },
+    "854855924": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Mr. Chu (On Stage)",
+      "artist": "Apink",
+      "playlistId": "good-k-pop"
+    },
+    "1039797280": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Starman (2012 Remaster)",
+      "artist": "David Bowie",
+      "playlistId": "good-rock"
+    },
+    "1039797288": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Rock 'n' Roll Suicide (2012 Remaster)",
+      "artist": "David Bowie",
+      "playlistId": "good-rock"
+    },
+    "1050204631": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Thinking Out Loud",
+      "artist": "Ed Sheeran",
+      "playlistId": "good-pop"
+    },
+    "1058093902": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Like I'm Gonna Lose You (feat. John Legend)",
+      "artist": "Meghan Trainor",
+      "playlistId": "good-pop"
+    },
+    "1229126596": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Don't Ask",
+      "artist": "J.Sheon",
+      "playlistId": "good-new-mandopop"
+    },
+    "1299076920": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Might As Well",
+      "artist": "Janice Yan",
+      "playlistId": "good-new-mandopop"
+    },
+    "1316852696": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Give Love",
+      "artist": "AKMU",
+      "playlistId": "good-k-pop"
+    },
+    "1354875815": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Don't Call Me Baby",
+      "artist": "Celeina Ann",
+      "playlistId": "good-j-pop"
+    },
+    "1377827086": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Patience",
+      "artist": "Guns N' Roses",
+      "playlistId": "good-rock"
+    },
+    "1383989661": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Tequila",
+      "artist": "Dan + Shay",
+      "playlistId": "good-pop"
+    },
+    "1440805631": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Have a Nice Day",
+      "artist": "Bon Jovi",
+      "playlistId": "good-rock"
+    },
+    "1440808179": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Only Girl (In the World)",
+      "artist": "Rihanna",
+      "playlistId": "good-pop"
+    },
+    "1440825194": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Katmandu",
+      "artist": "Bob Seger",
+      "playlistId": "good-rock"
+    },
+    "1440849573": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Stitches",
+      "artist": "Shawn Mendes",
+      "playlistId": "good-pop"
+    },
+    "1440852679": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "One Last Time",
+      "artist": "Ariana Grande",
+      "playlistId": "good-pop"
+    },
+    "1440892706": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Mercy",
+      "artist": "Shawn Mendes",
+      "playlistId": "good-pop"
+    },
+    "1440934115": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Love on the Brain",
+      "artist": "Rihanna",
+      "playlistId": "good-pop"
+    },
+    "1440934221": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Sex with Me",
+      "artist": "Rihanna",
+      "playlistId": "good-pop"
+    },
+    "1440935808": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Blank Space",
+      "artist": "Taylor Swift",
+      "playlistId": "good-pop"
+    },
+    "1446781787": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Marigold",
+      "artist": "Aimyon",
+      "playlistId": "good-j-pop"
+    },
+    "1452859410": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Love Story",
+      "artist": "Taylor Swift",
+      "playlistId": "good-pop"
+    },
+    "1460315065": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "We Can't Stop",
+      "artist": "Miley Cyrus",
+      "playlistId": "good-pop"
+    },
+    "1468058706": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "ME! (feat. Brendon Urie of Panic! At The Disco)",
+      "artist": "Taylor Swift",
+      "playlistId": "good-pop"
+    },
+    "1471704175": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Counting Stars",
+      "artist": "OneRepublic",
+      "playlistId": "good-pop"
+    },
+    "1476772799": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Bad to the Bone",
+      "artist": "George Thorogood & The Destroyers",
+      "playlistId": "good-rock"
+    },
+    "1491481298": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Tough Days (feat. Ashlee Yip)",
+      "artist": "Dean Ting",
+      "playlistId": "good-new-mandopop"
+    },
+    "1511562950": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Stuck with U",
+      "artist": "Ariana Grande & Justin Bieber",
+      "playlistId": "good-pop"
+    },
+    "1538259004": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Kataomoi",
+      "artist": "Aimer",
+      "playlistId": "good-j-pop"
+    },
+    "1538923599": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Seishun Kyousoukyoku",
+      "artist": "Sambomaster",
+      "playlistId": "good-rock"
+    },
+    "1539123878": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Who I Am",
+      "artist": "milet",
+      "playlistId": "good-j-pop"
+    },
+    "1542182544": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Ano yume wo nazotte",
+      "artist": "YOASOBI",
+      "playlistId": "good-j-pop"
+    },
+    "1542182772": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Haruka",
+      "artist": "YOASOBI",
+      "playlistId": "good-j-pop"
+    },
+    "1543157753": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Gurenge - From THE FIRST TAKE",
+      "artist": "LiSA",
+      "playlistId": "good-j-pop"
+    },
+    "1590036250": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "I Drink Wine",
+      "artist": "Adele",
+      "playlistId": "good-pop"
+    },
+    "1596529381": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Spring Day",
+      "artist": "BTS",
+      "playlistId": "good-k-pop"
+    },
+    "1609666704": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Charmer",
+      "artist": "Stray Kids",
+      "playlistId": "good-pop"
+    },
+    "1612321591": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Bones",
+      "artist": "Imagine Dragons",
+      "playlistId": "good-pop"
+    },
+    "1637053252": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Old Love",
+      "artist": "Yuji & putri dahlia",
+      "playlistId": "good-pop"
+    },
+    "1641565456": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Celestial",
+      "artist": "Ed Sheeran",
+      "playlistId": "good-pop"
+    },
+    "1653812241": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Gurenge - Epic Version (from \"Demon Slayer\") [Cover]",
+      "artist": "Samuel Kim",
+      "playlistId": "good-j-pop"
+    },
+    "1675370419": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "I Only Set My Eyes on You (From \"Slam Dunk\")",
+      "artist": "Vocapanda",
+      "playlistId": "good-j-pop"
+    },
+    "1678949889": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Kizuna No Kiseki",
+      "artist": "MAN WITH A MISSION & milet",
+      "playlistId": "good-j-pop"
+    },
+    "1690840818": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Long Live (Taylor's Version)",
+      "artist": "Taylor Swift",
+      "playlistId": "good-pop"
+    },
+    "1698442081": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Blue",
+      "artist": "liebelake",
+      "playlistId": "good-j-pop"
+    },
+    "1702906535": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Flowers",
+      "artist": "Miley Cyrus",
+      "playlistId": "good-pop"
+    },
+    "1703512981": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "モブい",
+      "artist": "窓際ぼっち倶楽部",
+      "playlistId": "good-j-pop"
+    },
+    "1708146888": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Hajimatteiku Takamatteiku",
+      "artist": "Sambomaster",
+      "playlistId": "good-rock"
+    },
+    "1725076266": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Escapism From Reality",
+      "artist": "liebelake",
+      "playlistId": "good-j-pop"
+    },
+    "1736995376": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "vampire",
+      "artist": "Olivia Rodrigo",
+      "playlistId": "good-pop"
+    },
+    "1737497080": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Good Luck, Babe!",
+      "artist": "Chappell Roan",
+      "playlistId": "good-pop"
+    },
+    "1743749267": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Popcorn",
+      "artist": "D.O.",
+      "playlistId": "good-k-pop"
+    },
+    "1744424853": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "February 14 (feat. Takaya Kawasaki)",
+      "artist": "miwa",
+      "playlistId": "good-j-pop"
+    },
+    "1757799717": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Hard to say",
+      "artist": "Karencici",
+      "playlistId": "good-new-mandopop"
+    },
+    "1781192370": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "First December with You",
+      "artist": "Olivia Marsh",
+      "playlistId": "good-pop"
+    },
+    "1786314599": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Skinny Love",
+      "artist": "Dean Ting",
+      "playlistId": "good-new-mandopop"
+    },
+    "1799271727": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "YELLOW",
+      "artist": "TREASURE",
+      "playlistId": "good-k-pop"
+    },
+    "1810572087": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Sunset In May",
+      "artist": "Hua Chen",
+      "playlistId": "good-new-mandopop"
+    },
+    "1832087996": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "back to friends",
+      "artist": "sombr",
+      "playlistId": "good-rock"
+    },
+    "1882164781": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Handlebars",
+      "artist": "JENNIE & Dua Lipa",
+      "playlistId": "good-pop"
+    },
+    "6809645919": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Love Story",
+      "artist": "P1Harmony",
+      "playlistId": "good-k-pop"
+    },
+    "6772365051": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "We Might as Well Be Strangers (ft. Wednesday)",
+      "artist": "Weezer",
+      "playlistId": "good-rock"
+    },
+    "6797444461": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "Insignificant Other",
+      "artist": "Queens of the Stone Age",
+      "playlistId": "good-rock"
+    },
+    "6772366438": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "High Hopes 3000",
+      "artist": "ROLE MODEL",
+      "playlistId": "good-rock"
+    },
+    "6781076660": {
+      "firstSeenAt": "2026-10-20T04:04:43.234Z",
+      "title": "I Was Born To Love You",
+      "artist": "Queen",
+      "playlistId": "good-rock"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "taylor-swift",
+  "name": "Taylor Swift",
+  "latinName": null,
+  "nativeName": null,
+  "role": "歌手、创作人",
+  "origin": "美国",
+  "image": "/images/artists/taylor-swift.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/taylor-swift/159260351",
+    "spotify": null,
+    "official": "https://www.taylorswift.com/"
+  },
+  "bio": "Taylor Swift 是 1989 年出生于宾夕法尼亚州西雷丁的美国创作歌手。她 2006 年发行首张同名专辑，2010 年的《Speak Now》是她第一张独自完成全部词曲创作的专辑。由于前六张专辑的母带不在自己手中，她自 2021 年起陆续重录这些作品，以「Taylor's Version」为名发行。",
+  "sources": [
+    {
+      "title": "Taylor Swift",
+      "publisher": "Apple Music",
+      "date": null,
+      "url": "https://music.apple.com/us/artist/taylor-swift/159260351"
+    },
+    {
+      "title": "The Official Website of Taylor Swift",
+      "publisher": "Taylor Swift 官方网站",
+      "date": null,
+      "url": "https://www.taylorswift.com/"
+    },
+    {
+      "title": "Taylor Swift's 'Speak Now': Why Is It Her Biggest 'Taylor's Version'",
+      "publisher": "Billboard",
+      "date": "2023-07-18",
+      "url": "https://www.billboard.com/music/chart-beat/taylor-swift-speak-now-taylors-version-five-burning-questions-1235373899/"
+    }
+  ]
+}

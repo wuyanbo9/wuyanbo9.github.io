@@ -1,0 +1,34 @@
+---
+import MusicLayout from '../../../layouts/MusicLayout.astro';
+import { artists, getArtistRecommendations } from '../../../music/lib/content';
+import { artistUrl } from '../../../music/lib/paths';
+
+const entries = artists
+  .map((artist) => ({
+    artist,
+    count: getArtistRecommendations(artist.slug).length,
+  }))
+  .filter((entry) => entry.count > 0);
+---
+
+<MusicLayout title="艺人" description="在「不一定是新歌」出现过的所有音乐人。">
+  <header class="page-head">
+    <h1>艺人</h1>
+    <p>{entries.length} 位音乐人，按名字排序。</p>
+  </header>
+
+  <ul class="artist-list">
+    {entries.map(({ artist, count }) => {
+      const note = [artist.origin, artist.role].filter(Boolean).join(' · ');
+      return (
+        <li>
+          <span>
+            <a class="artist-name" href={artistUrl(artist.slug)}>{artist.name}</a>
+            {note && <span class="artist-note">{note}</span>}
+          </span>
+          <span class="artist-count">{count} 首</span>
+        </li>
+      );
+    })}
+  </ul>
+</MusicLayout>

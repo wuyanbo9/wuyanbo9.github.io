@@ -1,0 +1,36 @@
+{
+  "slug": "queen",
+  "name": "Queen",
+  "latinName": null,
+  "nativeName": null,
+  "role": "乐队",
+  "origin": "英国",
+  "image": "/images/artists/queen.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/queen/3296287",
+    "spotify": null,
+    "official": "https://www.queenonline.com/"
+  },
+  "bio": "Queen 是 1970 年在伦敦成立的四人乐队，成员为 Freddie Mercury（主唱、钢琴）、Brian May（吉他）、Roger Taylor（鼓）与 John Deacon（贝斯）。1975 年的《Bohemian Rhapsody》让他们进入世界范围的视野；1985 年的 Live Aid 演出成为摇滚史上最著名的现场之一。Freddie Mercury 于 1991 年去世，乐队在 1995 年用他留下的歌声完成了最后一张录音室专辑《Made in Heaven》。",
+  "sources": [
+    {
+      "title": "The Band",
+      "publisher": "QueenOnline",
+      "date": null,
+      "url": "https://www.queenonline.com/the_band"
+    },
+    {
+      "title": "Queen",
+      "publisher": "Apple Music",
+      "date": null,
+      "url": "https://music.apple.com/us/artist/queen/3296287"
+    },
+    {
+      "title": "Made In Heaven (Deluxe Edition)",
+      "publisher": "Apple Music",
+      "date": "1995-11-06",
+      "url": "https://music.apple.com/us/album/i-was-born-to-love-you/6781076648"
+    }
+  ]
+}

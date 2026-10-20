@@ -1,0 +1,42 @@
+---
+import MusicLayout from '../../layouts/MusicLayout.astro';
+import { lastSyncDate, playlists, site } from '../../music/lib/content';
+import { formatDate } from '../../music/lib/format';
+---
+
+<MusicLayout title="歌单" description="「不一定是新歌」跟踪的五张 Apple Music 歌单。">
+  <header class="page-head">
+    <h1>歌单</h1>
+    <p>声音的来处。</p>
+  </header>
+
+  <p>{site.playlistsNote}</p>
+
+  <ul class="playlist-list">
+    {playlists.map((playlist) => (
+      <li class="playlist-item" id={playlist.id}>
+        <div class="playlist-head">
+          <h2 class="playlist-name">
+            <a href={playlist.url} target="_blank" rel="noreferrer">
+              {playlist.name} ↗
+            </a>
+          </h2>
+          {playlist.trackCount !== null && (
+            <span class="playlist-count">{playlist.trackCount} 首</span>
+          )}
+        </div>
+        <p class="playlist-meta">
+          {[playlist.region, playlist.description, playlist.updatedLabel]
+            .filter(Boolean)
+            .join(' · ')}
+        </p>
+      </li>
+    ))}
+  </ul>
+
+  {lastSyncDate && (
+    <p class="sync-note">
+      最近同步：{formatDate(lastSyncDate)}。同步会比较每张歌单的曲目快照，只有新出现的曲目才会成为下一期的候选。
+    </p>
+  )}
+</MusicLayout>

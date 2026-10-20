@@ -1,0 +1,24 @@
+---
+import { issueUrl } from '../lib/paths';
+import type { IssueTrack } from '../lib/types';
+import ArtistLinks from './ArtistLinks.astro';
+
+interface Props {
+  tracks: IssueTrack[];
+  /** Set when the index sits outside its own issue page, so anchors get a full path. */
+  issueSlug?: string;
+}
+
+const { tracks, issueSlug } = Astro.props;
+const base = issueSlug ? issueUrl(issueSlug) : '';
+---
+
+<ol class="track-index">
+  {tracks.map((track, index) => (
+    <li>
+      <span class="number">{String(index + 1).padStart(2, '0')}</span>
+      <span class="track-title"><a href={`${base}#${track.slug}`}>{track.title}</a></span>
+      <span class="track-artist"><ArtistLinks track={track} /></span>
+    </li>
+  ))}
+</ol>

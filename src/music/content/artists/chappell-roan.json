@@ -1,0 +1,42 @@
+{
+  "slug": "chappell-roan",
+  "name": "Chappell Roan",
+  "latinName": null,
+  "nativeName": null,
+  "role": "歌手",
+  "origin": "美国",
+  "image": "/images/artists/chappell-roan.jpg",
+  "imageCredit": "Apple Music",
+  "links": {
+    "appleMusic": "https://music.apple.com/us/artist/chappell-roan/1264818718",
+    "spotify": "https://open.spotify.com/artist/7GlBOeep6PqTfFi59PTUUN",
+    "official": "https://www.iamchappellroan.com/"
+  },
+  "bio": "Chappell Roan，本名 Kayleigh Rose Amstutz，1998 年生于美国密苏里州威拉德。2015 年签约 Atlantic，2017 年发行 EP《School Nights》。2020 年的《Pink Pony Club》让她受到关注；2023 年发行首张专辑《The Rise and Fall of a Midwest Princess》。2024 年的《Good Luck, Babe!》把她推向全球，2025 年获格莱美最佳新人及全英音乐奖国际歌曲奖。",
+  "sources": [
+    {
+      "title": "A Timeline of Chappell Roan's Rapid Rise From YouTube Covers to Record Deal, VMAs, SNL & Rise to Fame",
+      "publisher": "Them",
+      "date": "2024",
+      "url": "https://www.them.us/story/chappell-roan-career-timeline-youtube-covers-record-deal-vmas-snl-rise-to-fame"
+    },
+    {
+      "title": "Chappell Roan Is Billboard's Top New Artist of 2024",
+      "publisher": "Billboard",
+      "date": "2024-12-13",
+      "url": "https://www.billboard.com/music/chart-beat/chappell-roan-billboard-top-new-artist-of-2024-1235850676/"
+    },
+    {
+      "title": "Chappell Roan",
+      "publisher": "GRAMMY.com",
+      "date": null,
+      "url": "https://www.grammy.com/artists/chappell-roan/56864/"
+    },
+    {
+      "title": "The BRIT Awards 2025: Winners, Performances & Highlights",
+      "publisher": "BPI",
+      "date": "2025-03",
+      "url": "https://www.bpi.co.uk/news/12870238"
+    }
+  ]
+}

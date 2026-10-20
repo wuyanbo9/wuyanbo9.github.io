@@ -1,0 +1,33 @@
+---
+import MusicLayout from '../../layouts/MusicLayout.astro';
+import { issues, site } from '../../music/lib/content';
+import { formatDate, formatIssueLabel } from '../../music/lib/format';
+import { issueUrl } from '../../music/lib/paths';
+---
+
+<MusicLayout>
+  <h1 class="sr-only">{site.name} 时间线</h1>
+  <p class="page-intro">{site.description}</p>
+
+  {issues.length > 0 ? (
+    <ol class="timeline" aria-label="往期时间线">
+      {issues.map((issue) => (
+        <li class="timeline-item">
+          <p class="timeline-meta">
+            <time datetime={issue.publishedAt}>{formatDate(issue.publishedAt)}</time>
+            {` · ${formatIssueLabel(issue.number)}${issue.label ? ` · ${issue.label}` : ''} · ${issue.tracks.length} 首`}
+          </p>
+          <h2 class="timeline-title">
+            <a href={issueUrl(issue.slug)}>{issue.title}</a>
+          </h2>
+          <p class="timeline-summary">{issue.summary}</p>
+          <p class="timeline-more">
+            <a href={issueUrl(issue.slug)}>阅读本期 →</a>
+          </p>
+        </li>
+      ))}
+    </ol>
+  ) : (
+    <p>还没有内容。下一期见。</p>
+  )}
+</MusicLayout>
