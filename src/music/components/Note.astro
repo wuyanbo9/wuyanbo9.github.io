@@ -21,15 +21,12 @@ const playlist = playlistById.get(track.sourcePlaylistId);
       class="note-cover"
       src={track.artwork}
       alt={`${track.album} 封面`}
-      width="600"
-      height="600"
+      width="500"
+      height="500"
       loading="lazy"
       decoding="async"
     />
     <div class="note-heading">
-      <p class="note-kicker">
-        {String(index + 1).padStart(2, '0')} / {playlist?.name ?? 'Apple Music'}
-      </p>
       <h2>{track.title}</h2>
       <p class="note-meta">
         <ArtistLinks track={track} /> · {formatYear(track.releaseDate)} · {formatDuration(
@@ -37,9 +34,9 @@ const playlist = playlistById.get(track.sourcePlaylistId);
         )}
       </p>
       <p class="note-listen">
-        <a href={track.appleMusicUrl} target="_blank" rel="noreferrer">Apple Music ↗</a>
+        <a href={track.appleMusicUrl} target="_blank" rel="noreferrer">Apple Music</a>
         {track.spotifyUrl && (
-          <a href={track.spotifyUrl} target="_blank" rel="noreferrer">Spotify ↗</a>
+          <a href={track.spotifyUrl} target="_blank" rel="noreferrer">Spotify</a>
         )}
       </p>
     </div>

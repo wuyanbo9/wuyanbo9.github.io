@@ -35,16 +35,13 @@ const meta = [
 ---
 
 <MusicLayout title={issue.title} description={issue.summary} type="article">
-  <a class="backlink" href={issuesUrl()}>← 往期</a>
 
   <header class="issue-head">
-    <p class="kicker">{meta}</p>
     <h1>{issue.title}</h1>
     <div class="prose issue-intro" set:html={markdown(issue.intro)} />
   </header>
 
   <section class="contents" aria-labelledby="contents-title">
-    <h2 id="contents-title" class="section-label">本期曲目</h2>
     <TrackIndex tracks={issue.tracks} />
   </section>
 
@@ -52,22 +49,4 @@ const meta = [
     <Note track={track} index={trackIndex} />
   ))}
 
-  <footer class="issue-footer">
-    {older ? (
-      <a class="other-issue" href={issueUrl(older.slug)}>
-        ← 较早一期
-        <span>{formatIssueLabel(older.number)} · {older.title}</span>
-      </a>
-    ) : (
-      <span></span>
-    )}
-    {newer ? (
-      <a class="other-issue" href={issueUrl(newer.slug)}>
-        较新一期 →
-        <span>{formatIssueLabel(newer.number)} · {newer.title}</span>
-      </a>
-    ) : (
-      <a href={issuesUrl()}>全部期数 →</a>
-    )}
-  </footer>
 </MusicLayout>

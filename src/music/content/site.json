@@ -1,6 +1,6 @@
 {
   "name": "不一定是新歌",
-  "description": "「不一定是新歌」是一份每周更新的听歌记录，只跟踪 Yanbo 指定的五张 Apple Music 歌单。",
+  "description": "",
   "author": "Yanbo",
-  "playlistsNote": "这里只跟踪我指定的五张 Apple Music 歌单。每周同步一次，新收录的曲目会出现在下一期。"
+  "playlistsNote": ""
 }
