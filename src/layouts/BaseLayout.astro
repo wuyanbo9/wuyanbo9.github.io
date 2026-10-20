@@ -92,6 +92,6 @@ const alternateLinks = Object.entries(alternates) as [Lang, string][];
         <slot />
       </div>
     </main>
-    <Footer lang={lang} />
+    <Footer lang={lang} showMusic={!section} />
   </body>
 </html>

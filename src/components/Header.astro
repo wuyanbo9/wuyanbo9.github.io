@@ -1,6 +1,6 @@
 ---
 import { SITE_NAME } from '../consts';
-import { LANG_NAME, LOCALE, UI, localize, otherLang, type Lang } from '../i18n';
+import { LANG_NAME, LOCALE, localize, otherLang, type Lang } from '../i18n';
 
 export interface SectionNav {
   /** Name of the sub-site, shown next to the site brand. */
@@ -33,7 +33,7 @@ const isCurrent = (href: string) => here === href || here.startsWith(href);
       </span>
 
       {
-        section ? (
+        section && (
           <>
             <span class="section grow">
               <a href={section.href} aria-current={here === section.href ? 'page' : undefined}>
@@ -46,10 +46,6 @@ const isCurrent = (href: string) => here === href || here.startsWith(href);
               </a>
             ))}
           </>
-        ) : (
-          <a href={UI[lang].musicHref} aria-current={isCurrent('/music') ? 'page' : undefined}>
-            {UI[lang].musicTitle}
-          </a>
         )
       }
 

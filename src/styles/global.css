@@ -214,3 +214,8 @@ hr {
 .site-footer a {
   color: var(--muted);
 }
+
+/* The weekly is the one thing in the footer meant to be noticed. */
+.site-footer .music-link {
+  color: var(--accent);
+}
