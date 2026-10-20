@@ -34,7 +34,6 @@ export const UI = {
     updated: 'Updated',
     // The music weekly is written in Chinese; the label says what it is, not what it reads like.
     musicTitle: 'Music',
-    musicHref: '/music/',
   },
   zh: {
     siteDescription: 'Yanbo 的随手笔记',
@@ -43,7 +42,6 @@ export const UI = {
     empty: '还没有文章。',
     updated: '更新于',
     musicTitle: '不一定是新歌',
-    musicHref: '/music/',
   },
 } satisfies Record<Lang, Record<string, string>>;
 

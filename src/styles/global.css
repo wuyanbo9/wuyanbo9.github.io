@@ -62,7 +62,6 @@ body {
 }
 
 .site-header .brand a,
-.site-header .section a,
 .site-header a[aria-current='page'] {
   color: var(--fg);
 }

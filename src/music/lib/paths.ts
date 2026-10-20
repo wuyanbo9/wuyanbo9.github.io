@@ -28,7 +28,3 @@ export function artistsUrl(): string {
 export function artistUrl(slug: string): string {
   return `${MUSIC_BASE}/artists/${slug}/`;
 }
-
-export function playlistsUrl(): string {
-  return `${MUSIC_BASE}/playlists/`;
-}

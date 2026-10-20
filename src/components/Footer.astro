@@ -1,18 +1,17 @@
 ---
 import { SITE_COPYRIGHT } from '../consts';
 import { UI, type Lang } from '../i18n';
+import { musicHome } from '../music/lib/paths';
 
 interface Props {
   lang: Lang;
-  /** Hidden inside the weekly itself, where the link would point at the page you are on. */
-  showMusic?: boolean;
 }
 
-const { lang, showMusic = true } = Astro.props;
+const { lang } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer wrap">
   <span>© {year} {SITE_COPYRIGHT}</span>
-  {showMusic && <a class="music-link" href={UI[lang].musicHref}>{UI[lang].musicTitle}</a>}
+  <a class="music-link" href={musicHome()}>{UI[lang].musicTitle}</a>
 </footer>

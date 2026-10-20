@@ -2,53 +2,21 @@
 import { SITE_NAME } from '../consts';
 import { LANG_NAME, LOCALE, localize, otherLang, type Lang } from '../i18n';
 
-export interface SectionNav {
-  /** Name of the sub-site, shown next to the site brand. */
-  name: string;
-  href: string;
-  links: { label: string; href: string }[];
-}
-
 interface Props {
   lang: Lang;
   alternates: Partial<Record<Lang, string>>;
-  /** Set on pages inside a sub-site, which navigate within themselves. */
-  section?: SectionNav;
 }
 
-const { lang, alternates, section } = Astro.props;
-const here = Astro.url.pathname;
+const { lang, alternates } = Astro.props;
 // Only offer the switch when this page actually exists in the other language.
 const switchTo = otherLang(lang);
 const switchHref = alternates[switchTo];
-
-const isCurrent = (href: string) => here === href || here.startsWith(href);
 ---
 
 <header class="site-header">
   <div class="wrap">
     <nav>
-      <span class={section ? 'brand' : 'brand grow'}>
-        <a href={localize('/', lang)}>{SITE_NAME}</a>
-      </span>
-
-      {
-        section && (
-          <>
-            <span class="section grow">
-              <a href={section.href} aria-current={here === section.href ? 'page' : undefined}>
-                {section.name}
-              </a>
-            </span>
-            {section.links.map((link) => (
-              <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
-                {link.label}
-              </a>
-            ))}
-          </>
-        )
-      }
-
+      <span class="brand grow"><a href={localize('/', lang)}>{SITE_NAME}</a></span>
       {
         switchHref && (
           <a class="lang-switch" href={switchHref} hreflang={LOCALE[switchTo]} lang={LOCALE[switchTo]}>
